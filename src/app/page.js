@@ -58,12 +58,17 @@ export default function Home() {
                   Login
                 </Link>
               </li>
+              <li>
+                <Link href="/login" className="text-white hover:underline">
+                  Signup
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow p-8">
+        <main className="flex-grow p-8 bg-zinc-950">
           <section className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Welcome!</h2>
             <p className="mb-4">
