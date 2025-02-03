@@ -20,22 +20,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 1. **Clone the Repository:**  
    First, clone the repository to your local machine:
-   **Note:** If you haven't set up your SSH key with GitHub yet, or if you don't have access, please send your public SSH key to the repo owner (Tobyn Sitar) so it can be added to the repo.
+   **Note:** If you haven't set up your SSH key with GitHub yet, or if you don't have access, please send your public SSH key to the repo maintainer (Tobyn Sitar) so it can be added to the repo.
 
    ```bash
-   git clone git@github.com:YourUsername/YourRepository.git
+   git clone git@github.com:Tobyn-Sitar/WCUPA-Degree-Visualizer-CSC-402-.git
    ```
 
 2. **Install Dependencies:**  
    Navigate into the project directory and install the required packages:
 
    ```bash
-   cd YourRepository
+   cd WCUPA-Degree-Visualizer-CSC-402-
    npm install
    ```
 
 3. **Open the Project:**  
-   Open the project folder in your preferred code editor or IDE.
+   Open the project folder in Visual Studio Code or your preferred code editor or IDE.
 
 4. **Run the Development Server:**  
    Once you're in the project directory, start the Next.js development server using one of the following commands:
@@ -43,12 +43,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
