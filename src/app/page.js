@@ -53,6 +53,11 @@ export default function Home() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/login" className="text-white hover:underline">
+                  Login
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>
@@ -62,10 +67,10 @@ export default function Home() {
           <section className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Welcome!</h2>
             <p className="mb-4">
-            This a ROUGH rough draft of the website project just to get as an example starter page and have a mockup example.
+              This is a very rough draft of the website project meant to serve as an example starter page and provide a mockup.
             </p>
             <p>
-            We'll be adding features like navigation tabs and user login to fully enable degree progress tracking.
+              We'll be adding features like navigation tabs and user login to fully enable degree progress tracking.
             </p>
           </section>
         </main>
