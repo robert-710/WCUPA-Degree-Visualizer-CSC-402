@@ -1,16 +1,13 @@
-/* Add the base styles for the entire app */
 #root, .App {
   min-width: 100%;
   min-height: 100%;
 }
 
-/* Add styles for the title */
 .title {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Add styles for the demo-container that holds the tree and sidebar */
 .demo-container {
   position: fixed;
   display: flex;
@@ -19,7 +16,6 @@
   width: 100%;
 }
 
-/* Left sidebar styles */
 .column-left {
   width: 30%;
   display: flex;
@@ -28,7 +24,6 @@
   border-right: 1px solid #2d3748;
 }
 
-/* Styles for controls in the left sidebar */
 .controls-container {
   display: flex;
   flex-direction: column;
@@ -36,7 +31,6 @@
   overflow-y: scroll;
 }
 
-/* State container in the left sidebar */
 .state-container {
   display: none;
   flex-direction: column;
@@ -53,19 +47,17 @@
   height: 100%;
 }
 
-/* Right side (where the tree chart is displayed) */
 .column-right {
   height: 100%;
   width: 100%;
 }
 
-/* Container that holds the tree visualization */
+
 .tree-container {
   height: 100%;
   /* background: #ccf6c8; */
 }
 
-/* Style for properties displayed */
 .prop-container {
   padding: 2px 5px;
   margin: 15px 10px;
@@ -84,7 +76,6 @@
   padding: 5px;
 }
 
-/* Button controls */
 .btn-controls {
   color: #f7fafc;
   background-color: #2d3748;
@@ -98,7 +89,6 @@
   border-color: #f7fafc;
 }
 
-/* Tree statistics container */
 .tree-stats-container {
   text-align: center;
   padding: 0.5rem 2rem;
@@ -106,13 +96,11 @@
   font-weight: bold;
 }
 
-/* Custom node styles */
 .demo-node > circle {
   fill: #2d3748;
   stroke: #2d3748;
 }
 
-/* Custom path styles */
 .my-path-class {
   stroke: royalblue;
   stroke-width: 10;
