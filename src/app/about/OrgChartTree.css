@@ -1,0 +1,119 @@
+/* Add the base styles for the entire app */
+#root, .App {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add styles for the title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the demo-container that holds the tree and sidebar */
+.demo-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+/* Left sidebar styles */
+.column-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #f7fafc;
+  border-right: 1px solid #2d3748;
+}
+
+/* Styles for controls in the left sidebar */
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1;
+  overflow-y: scroll;
+}
+
+/* State container in the left sidebar */
+.state-container {
+  display: none;
+  flex-direction: column;
+  flex-basis: 30%;
+  border-top: 1px solid black;
+}
+
+.state-container > h4 {
+  color: black;
+}
+
+.state {
+  width: 100%;
+  height: 100%;
+}
+
+/* Right side (where the tree chart is displayed) */
+.column-right {
+  height: 100%;
+  width: 100%;
+}
+
+/* Container that holds the tree visualization */
+.tree-container {
+  height: 100%;
+  /* background: #ccf6c8; */
+}
+
+/* Style for properties displayed */
+.prop-container {
+  padding: 2px 5px;
+  margin: 15px 10px;
+}
+
+.prop {
+  font-weight: bold;
+  display: block;
+}
+
+.prop-large {
+  font-size: 16px;
+}
+
+.sub-prop {
+  padding: 5px;
+}
+
+/* Button controls */
+.btn-controls {
+  color: #f7fafc;
+  background-color: #2d3748;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-controls:hover,
+.btn-controls:focus,
+.btn-controls:active {
+  color: white;
+  border-color: #f7fafc;
+}
+
+/* Tree statistics container */
+.tree-stats-container {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #2d3748;
+  font-weight: bold;
+}
+
+/* Custom node styles */
+.demo-node > circle {
+  fill: #2d3748;
+  stroke: #2d3748;
+}
+
+/* Custom path styles */
+.my-path-class {
+  stroke: royalblue;
+  stroke-width: 10;
+}
