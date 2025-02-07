@@ -1,26 +1,24 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Tree from 'react-d3-tree';
-
-// Import the JSON data directly
-import orgChartData from './test.json'; // Adjust path according to your structure
+import orgChartData from './test.json'; 
 
 export default function OrgChartTree() {
   const [mounted, setMounted] = useState(false);
-  const [orgChart, setOrgChart] = useState(orgChartData); // Use the imported data
-  const [shouldCollapseNeighborNodes, setShouldCollapseNeighborNodes] = useState(true); // State for collapsing nodes
+  const [orgChart, setOrgChart] = useState(orgChartData); 
+  const [shouldCollapseNeighborNodes, setShouldCollapseNeighborNodes] = useState(true);
 
   useEffect(() => {
-    setMounted(true); // Indicate that the component has mounted
+    setMounted(true); 
   }, []);
 
-  // Function to toggle collapsing of neighbor nodes
+
   const toggleCollapseNeighborNodes = () => {
     setShouldCollapseNeighborNodes(prevState => !prevState);
   };
 
   if (!mounted || !orgChart) {
-    return <div>Loading...</div>; // Optionally, show a loading state
+    return <div>Loading...</div>; 
   }
 
   return (
@@ -28,13 +26,13 @@ export default function OrgChartTree() {
       <button onClick={toggleCollapseNeighborNodes}>
         {shouldCollapseNeighborNodes ? 'Expand All Nodes' : 'Collapse Neighbor Nodes'}
       </button>
-      
+      // There are more options listed in react-d3-tree documentation.
       <div id="treeWrapper" style={{ width: '80em', height: '80em' }}>
         <Tree
           data={orgChart}
-          orientation="horizontal"  // Set the tree layout to horizontal
-          initialCollapsed={shouldCollapseNeighborNodes}  // Collapse or expand based on state
-          pathFunc="elbow"         // Set lines to be straight
+          orientation="horizontal"  // Change to "vertical" to make tree vertical
+          initialCollapsed={shouldCollapseNeighborNodes}  
+          pathFunc="elbow" // Set lines 
           separation={{
             siblings: 2,  // Adjust the distance between sibling nodes
             nonSiblings: 2, // Adjust the distance between parent and child nodes
