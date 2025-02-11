@@ -1,0 +1,69 @@
+{
+    "Degree Name": "B.S. in Computer Science",
+    "Rotal Required Credits": 120,
+    "Requirements": [
+        {
+            "Requirement Name": "GENERAL EDUCATION REQUIREMENT",
+            "Requirements": [
+                {
+                    "General Education Requirement Name": "Academic Foundations",
+                    "Requirements": [
+                        {
+                            
+                        }
+                    ]
+                },
+                {
+                    "General Education Requirement Name": "Distributed Disciplinary Foundations",
+                    "Requirements": [
+                        {
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Requirement Name": "ADDITIONAL BACCALAUREATE REQUIREMENTS",
+            "Requirements": [
+                {
+                    "Additional Baccalaureate Requirement Name": "University Requirements",
+                    "Requirements": [
+                        {
+
+                        }
+                    ]
+                },
+                {
+                    "Additional Baccalaureate Requirement Name": "Degree Requirements",
+                    "Requirements": [
+                        {
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Requirement Name": "MAJOR REQUIREMENTS",
+            "Requirements": [
+                {
+                    "Major Requirement Name": "University Requirements",
+                    "Requirements": [
+                        {
+
+                        }
+                    ]
+                },
+                {
+                    "Major Requirement Name": "Degree Requirements",
+                    "Requirements": [
+                        {
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
