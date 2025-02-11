@@ -9,7 +9,29 @@
                     "General Education Requirement Name": "Academic Foundations",
                     "Requirements": [
                         {
-                            
+                            "Requirement Type": "Subject Requirement",
+                            "Requirements": [
+                                {
+                                    "Requirement Name": "First Year Experience requirement",
+                                    "Minimum Credits": 4,
+                                    "Maximum Credits": 4
+                                },
+                                {
+                                    "Requirement Name": "English Composition requirement",
+                                    "Minimum Credits": 6,
+                                    "Maximum Credits": 7
+                                },
+                                {
+                                    "Requirement Name": "Interdisciplinary requirement",
+                                    "Minimum Credits": 3,
+                                    "Maximum Credits": 3
+                                },
+                                {
+                                    "Requirement Name": "Diverse Communities requirement",
+                                    "Minimum Credits": 3,
+                                    "Maximum Credits": 3
+                                }
+                            ]
                         }
                     ]
                 },
