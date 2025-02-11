@@ -1,91 +1,201 @@
 {
-    "Degree Name": "B.S. in Computer Science",
-    "Rotal Required Credits": 120,
-    "Requirements": [
+  "general_education_requirements": {
+    "academic_foundations": {
+      "first_year_experience": 4,
+      "english_composition": "6-7",
+      "mathematics": {
+        "credits": "3-4",
+        "courses": ["MAT 151", "Introduction to Discrete Mathematics"]
+      },
+      "interdisciplinary": 3,
+      "diverse_communities": 3,
+      "ethics": {
+        "credits": 3,
+        "satisfied_by": "CSC 301"
+      }
+    },
+    "distributed_disciplinary_foundations": {
+      "science": {
+        "credits": "6-8",
+        "options": [
+          {
+            "course": "BIO 110",
+            "title": "General Biology I"
+          },
+          {
+            "course": "CHE 103 & CRL 103",
+            "title": "General Chemistry I and Lab"
+          },
+          {
+            "course": "ESS 101",
+            "title": "Introduction to Geology"
+          },
+          {
+            "course": "PHY 130 or PHY 170",
+            "title": "General Physics I or Physics I"
+          }
+        ]
+      },
+      "behavioral_social_science": 6,
+      "humanities": 6,
+      "arts": 3
+    }
+  },
+  "additional_baccalaureate_requirements": {
+    "university_requirements": {
+      "writing_emphasis": {
+        "credits": 9,
+        "options": [
+          {
+            "course": "ENG 368",
+            "title": "Business and Organizational Writing"
+          },
+          {
+            "course": "ENG 371",
+            "title": "Technical Writing"
+          }
+        ]
+      },
+      "speaking_emphasis": {
+        "credits": 9,
+        "options": [
+          {
+            "course": "SPK 208",
+            "title": "Public Speaking"
+          },
+          {
+            "course": "SPK 230",
+            "title": "Business and Professional Speech Communication"
+          }
+        ]
+      }
+    },
+    "degree_requirements": {
+      "capstone": "1-15"
+    }
+  },
+  "major_requirements": {
+    "mathematics": [
+      {
+        "course": "MAT 121",
+        "title": "Introduction to Statistics I",
+        "credits": 3
+      },
+      {
+        "course": "MAT 151",
+        "title": "Introduction to Discrete Mathematics",
+        "credits": 3
+      },
+      {
+        "course": "MAT 161",
+        "title": "Calculus I",
+        "credits": 4
+      },
+      {
+        "course": "STA 200 or MAT 162",
+        "title": "Introduction to Statistics II or Calculus II",
+        "credits": 3
+      }
+    ],
+    "communications": [
+      {
+        "course": "SPK 208 or SPK 230",
+        "title": "Public Speaking or Business and Professional Speech Communication",
+        "credits": 3
+      },
+      {
+        "course": "ENG 368 or ENG 371",
+        "title": "Business and Organizational Writing or Technical Writing",
+        "credits": 3
+      }
+    ],
+    "computer_science_core": [
+      {
+        "course": "CSC 141",
+        "title": "Computer Science I",
+        "credits": 3
+      },
+      {
+        "course": "CSC 142",
+        "title": "Computer Science II",
+        "credits": 3
+      },
+      {
+        "course": "CSC 220",
+        "title": "Foundations of Computer Science",
+        "credits": 3
+      },
+      {
+        "course": "CSC 231",
+        "title": "Computer Systems",
+        "credits": 3
+      },
+      {
+        "course": "CSC 240",
+        "title": "Computer Science III",
+        "credits": 3
+      },
+      {
+        "course": "CSC 241",
+        "title": "Data Structures & Algorithms",
+        "credits": 3
+      },
+      {
+        "course": "CSC 301",
+        "title": "Computer Security & Ethics",
+        "credits": 3
+      },
+      {
+        "course": "CSC 345",
+        "title": "Programming Language Concepts/Paradigms",
+        "credits": 3
+      }
+    ],
+    "complex_large_scale_systems_courses": {
+      "credits": 3,
+      "options": [
         {
-            "Requirement Name": "GENERAL EDUCATION REQUIREMENT",
-            "Requirements": [
-                {
-                    "General Education Requirement Name": "Academic Foundations",
-                    "Requirements": [
-                        {
-                            "Requirement Type": "Subject Requirement",
-                            "Requirements": [
-                                {
-                                    "Requirement Name": "First Year Experience requirement",
-                                    "Minimum Credits": 4,
-                                    "Maximum Credits": 4
-                                },
-                                {
-                                    "Requirement Name": "English Composition requirement",
-                                    "Minimum Credits": 6,
-                                    "Maximum Credits": 7
-                                },
-                                {
-                                    "Requirement Name": "Interdisciplinary requirement",
-                                    "Minimum Credits": 3,
-                                    "Maximum Credits": 3
-                                },
-                                {
-                                    "Requirement Name": "Diverse Communities requirement",
-                                    "Minimum Credits": 3,
-                                    "Maximum Credits": 3
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "General Education Requirement Name": "Distributed Disciplinary Foundations",
-                    "Requirements": [
-                        {
-
-                        }
-                    ]
-                }
-            ]
+          "course": "CSC 416",
+          "title": "Design/Construction Compilers"
         },
         {
-            "Requirement Name": "ADDITIONAL BACCALAUREATE REQUIREMENTS",
-            "Requirements": [
-                {
-                    "Additional Baccalaureate Requirement Name": "University Requirements",
-                    "Requirements": [
-                        {
-
-                        }
-                    ]
-                },
-                {
-                    "Additional Baccalaureate Requirement Name": "Degree Requirements",
-                    "Requirements": [
-                        {
-
-                        }
-                    ]
-                }
-            ]
+          "course": "CSC 417",
+          "title": "User Interfaces"
         },
         {
-            "Requirement Name": "MAJOR REQUIREMENTS",
-            "Requirements": [
-                {
-                    "Major Requirement Name": "University Requirements",
-                    "Requirements": [
-                        {
-
-                        }
-                    ]
-                },
-                {
-                    "Major Requirement Name": "Degree Requirements",
-                    "Requirements": [
-                        {
-
-                        }
-                    ]
-                }
-            ]
+          "course": "CSC 418",
+          "title": "Modern Web Applications Using Server-Side Technologies"
+        },
+        {
+          "course": "CSC 466",
+          "title": "Distributed and Parallel Computing"
+        },
+        {
+          "course": "CSC 467",
+          "title": "Big Data Engineering"
+        },
+        {
+          "course": "CSC 468",
+          "title": "Introduction to Cloud Computing"
+        },
+        {
+          "course": "CSC 476",
+          "title": "Game Development"
+        },
+        {
+          "course": "CSC 496",
+          "title": "Topics in Complex Large-Scale Systems"
         }
-    ]
+      ]
+    },
+    "capstone_requirement": {
+      "course": "CSC 402",
+      "title": "Software Engineering 2",
+      "credits": 3
+    },
+    "computer_science_electives": {
+      "credits": 18,
+      "requirement": "A minimum of 6 credits must be 400-level courses. 3 credits of CSC 400 (Internship) can be used."
+    }
+  }
 }
