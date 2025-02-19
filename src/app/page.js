@@ -58,7 +58,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/login" className="text-white hover:underline">
+                <Link href="/signup" className="text-white hover:underline">
                   Signup
                 </Link>
               </li>
