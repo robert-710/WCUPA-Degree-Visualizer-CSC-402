@@ -1,48 +1,86 @@
-'use client';
-import React, { useEffect, useState } from 'react';
-import Tree from 'react-d3-tree';
-import orgChartData from './test.json'; 
+"use client";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import OrgChartTree from "./OrgChartTree"; // adjust the path if needed
+import "./OrgChartTree.css"; // ensure this path is correct
 
-export default function OrgChartTree() {
-  const [mounted, setMounted] = useState(false);
-  const [orgChart, setOrgChart] = useState(orgChartData); 
-  const [shouldCollapseNeighborNodes, setShouldCollapseNeighborNodes] = useState(true);
-
-  useEffect(() => {
-    setMounted(true); 
-  }, []);
-
-
-  const toggleCollapseNeighborNodes = () => {
-    setShouldCollapseNeighborNodes(prevState => !prevState);
-  };
-
-  if (!mounted || !orgChart) {
-    return <div>Loading...</div>; 
-  }
-
+export default function Courses() {
   return (
-    <div>
-      <button onClick={toggleCollapseNeighborNodes}>
-        {shouldCollapseNeighborNodes ? 'Expand All Nodes' : 'Collapse Neighbor Nodes'}
-      </button>
-      // There are more options listed in react-d3-tree documentation.
-      <div id="treeWrapper" style={{ width: '80em', height: '80em' }}>
-        <Tree
-          data={orgChart}
-          orientation="horizontal"  // Change to "vertical" to make tree vertical
-          initialCollapsed={shouldCollapseNeighborNodes}  
-          pathFunc="elbow" // Set lines 
-          separation={{
-            siblings: 2,  // Adjust the distance between sibling nodes
-            nonSiblings: 2, // Adjust the distance between parent and child nodes
-          }}
-          nodeSize={{
-            x: 250,  // Increase the horizontal space between nodes
-            y: 100,  // Increase the vertical space between nodes
-          }}
-        />
+    <>
+      <Head>
+        <title>Courses - WCUPA Degree Visualizer</title>
+        <meta name="description" content="Courses chart for WCUPA Degree Visualizer" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="min-h-screen flex flex-col">
+        {/* Header */}
+        <header className="bg-[#6e3061] p-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Image
+              src="/headerLogo1.png"
+              alt="Logo"
+              width={100}
+              height={100}
+              className="rounded"
+            />
+            <h1 className="ml-2 text-xl font-bold text-white">
+              WCUPA Degree Visualizer
+            </h1>
+          </div>
+          {/* Navigation Tabs */}
+          <nav>
+            <ul className="flex space-x-4">
+              <li>
+                <Link href="/" className="text-white hover:underline">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses" className="text-white hover:underline">
+                  Courses
+                </Link>
+              </li>
+              <li>
+                <Link href="/dashboard" className="text-white hover:underline">
+                  Dashboard
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-white hover:underline">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/login" className="text-white hover:underline">
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link href="/signup" className="text-white hover:underline">
+                  Signup
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        {/* Main Content */}
+        <main className="flex-grow p-8 bg-stone-50 text-black">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4">Courses</h2>
+            {/* Place your OrgChartTree component here */}
+            <OrgChartTree />
+          </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="bg-[#6e3061] p-4 text-center">
+          <p className="text-white">
+            &copy; {new Date().getFullYear()} WCUPA Degree Visualizer. All rights reserved.
+          </p>
+        </footer>
       </div>
-    </div>
+    </>
   );
 }
