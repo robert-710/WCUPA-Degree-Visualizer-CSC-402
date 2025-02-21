@@ -3,24 +3,14 @@ import geni.rspec.pg as rspec
 
 # Create a Request object to start building the RSpec.
 request = portal.context.makeRequestRSpec()
-
-# Use a shorter name for the node
-node = request.XenVM("gdp-node")  # Shortened from graphical-degree-progress-node
+# Create a XenVM
+node = request.XenVM("node")
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 node.routable_control_ip = "true"
 
-# Install system dependencies
 node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt update"))
-node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt install -y curl git"))
-
-# Install Docker
-node.addService(rspec.Execute(shell="/bin/sh", command="curl -fsSL https://get.docker.com -o get-docker.sh"))
-node.addService(rspec.Execute(shell="/bin/sh", command="sudo sh get-docker.sh"))
-node.addService(rspec.Execute(shell="/bin/sh", command="sudo systemctl start docker"))
-node.addService(rspec.Execute(shell="/bin/sh", command="sudo systemctl enable docker"))
-
-# Install Kubernetes (if needed)
-node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt install -y kubelet kubeadm kubectl"))
+node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt install -y apache2"))
+node.addService(rspec.Execute(shell="/bin/sh", command='sudo systemctl status apache2'))
 
 # Print the RSpec to the enclosing page.
 portal.context.printRequestRSpec()
